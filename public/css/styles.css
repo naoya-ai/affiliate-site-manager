@@ -1,0 +1,142 @@
+/* 全体のスタイル */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* ヘッダー */
+header {
+    background: #d32f2f; /* 緊急性を伝える赤色 */
+    color: #ffffff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* セクション */
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #d32f2f;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+section p, section ul {
+    line-height: 1.6;
+}
+
+section ul {
+    padding-left: 20px;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+/* 地震情報セクション */
+#latest-earthquake {
+    margin: 20px 0;
+    padding: 20px;
+    background: #fff3e0; /* 薄いオレンジで警告感を演出 */
+    border: 1px solid #ffcc80;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#latest-earthquake h2 {
+    color: #d32f2f;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+#earthquake-info p {
+    margin: 5px 0;
+    line-height: 1.6;
+}
+
+/* ローディングメッセージ */
+#loading-message {
+    text-align: center;
+    color: #d32f2f;
+    font-weight: bold;
+    margin-bottom: 10px;
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* フッター */
+footer {
+    background: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+a {
+    color: #35424a;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ボタンのスタイル */
+.button {
+    display: inline-block;
+    background: #d32f2f;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background: #b71c1c;
+}
